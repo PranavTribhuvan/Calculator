@@ -1,0 +1,46 @@
+<Clacwindow>:
+    orientation: 'vertical'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'B1.png'
+    BoxLayout:
+        id: display
+        size_hint_y: .1
+        Label:
+            text:'Calculator OF PRAX'
+            font_size:30
+            valign: 'top'
+            bold: True
+    BoxLayout:
+        id: display
+        size_hint_y: .2
+
+        TextInput:
+            id: inputt
+            background_color: (1, 1 ,0 ,0)
+            foreground_color: (1.0, 1.0, 1.0, 1.0)
+            font_size: 27
+            size_hint_y: .5
+            focus: True
+            padding: 10
+
+
+
+
+    BoxLayout:
+        id: main_btns
+        size_hint_y: .7
+        padding: 10
+        spacing: 3
+
+        GridLayout:
+            id: numbers
+            cols: 4
+            spacing: 10
+
+
+
+
+

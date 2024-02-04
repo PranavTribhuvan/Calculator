@@ -1,0 +1,38 @@
+<Clacwindow>:
+    orientation: 'vertical'
+    canvas.before:
+        Rectangle:
+            pos:self.pos
+            size:self.size
+            source: 'B1.png'
+        
+
+    BoxLayout:
+        id: title
+        size_hint_y: .1
+        Label:
+            text: 'Calcolator'
+            font_size: 30
+            bold: True
+
+    BoxLayout:
+        id: texinput 
+        size_hint_y: .2
+        TextInput:
+            id: inputt
+            size_hint_y:.5
+            font_size: 27
+            background_color:(4,1,0,0)
+            foreground_color: (1.0,1.0,1.0,1.0) 
+            focus:True
+            padding: 10
+    
+    BoxLayout:
+        id: main_btn
+        size_hint_y: .7
+        padding: 10
+
+        GridLayout:
+            id: numbers
+            cols: 4
+            spacing: 3
